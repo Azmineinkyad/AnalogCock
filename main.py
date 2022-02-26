@@ -7,8 +7,11 @@ wndw.setup(width=600, height=600)
 wndw.title("Just an Normal Clock")
 wndw.tracer(0)
 
-# Create the drawing pen
-pen = turtle.Turtle()
+                                                                              # Create the drawing pen
+
+    
+    
+    pen = turtle.Turtle()
 pen.hideturtle()
 pen.speed(0)
 pen.pensize(3)
@@ -16,7 +19,10 @@ pen.pensize(3)
 
 def draw_clock(hr, mn, sec, pen):
 
-    # Draw clock face
+                                                                                 # Draw clock face
+   
+
+
     pen.up()
     pen.goto(0, 210)
     pen.setheading(180)
@@ -24,7 +30,11 @@ def draw_clock(hr, mn, sec, pen):
     pen.pendown()
     pen.circle(210)
 
-    # Draw hour hashes
+                                                                                     # Draw hour hashes
+    
+    
+    
+    
     pen.up()
     pen.goto(0, 0)
     pen.setheading(90)
@@ -37,9 +47,16 @@ def draw_clock(hr, mn, sec, pen):
         pen.goto(0, 0)
         pen.rt(30)
 
-    # Draw the hands
-    # Each tuple in list hands describes the color, the length
-    # and the divisor for the angle
+        
+        
+        
+       
+                                                                                 # Draw the hands
+                                                             # Each tuple in list hands describes the color, the length
+                                                                          # and the divisor for the angle
+   
+
+
     hands = [("white", 80, 12), ("blue", 150, 60), ("red", 110, 60)]
     time_set = (hr, mn, sec)
 
